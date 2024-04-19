@@ -7,8 +7,7 @@ public class TUI {
         Scanner sc =new Scanner(System.in);
         sc.useLocale(Locale.ENGLISH);
 
-        int eleccion_menu = sc.nextInt();
-        switch (eleccion_menu) {
+        switch (sc.nextInt()) {
             case 1:
                 System.out.println("Has iniciado una nueva partida.");
                 break;
