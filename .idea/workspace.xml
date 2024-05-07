@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46a8e01c-0c02-41fd-a804-ce2de6764fe3" name="Changes" comment=".">
-      <change beforePath="$PROJECT_DIR$/src/main/java/TUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TUI.java" afterDir="false" />
+SoyManolo
+    <list default="true" id="46a8e01c-0c02-41fd-a804-ce2de6764fe3" name="Changes" comment="He añadido los metodos de la clase Main">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Juego.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Juego.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/JuegoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JuegoTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +59,9 @@
   "keyToString": {
     "Application.Main.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.JuegoTest.executor": "Run",
+    "JUnit.JuegoTest.jugar.executor": "Run",
+    "JUnit.JuegoTest.novaPartida.executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
     "Repository.Attach.Sources": "false",
@@ -80,20 +86,59 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager">
+ SoyManolo
+  <component name="RunManager" selected="JUnit.JuegoTest.jugar">
+    <configuration name="JuegoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DAW1TresEnLinia-ErikSaldana-EliasBenitez" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="JuegoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JuegoTest.jugar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DAW1TresEnLinia-ErikSaldana-EliasBenitez" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="JuegoTest" />
+      <option name="METHOD_NAME" value="jugar" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JuegoTest.novaPartida" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DAW1TresEnLinia-ErikSaldana-EliasBenitez" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="JuegoTest" />
+      <option name="METHOD_NAME" value="novaPartida" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
-      <module name="DAW1-TresEnLinia-ErikSaldana-EliasBenitez" />
+      <module name="DAW1TresEnLinia-ErikSaldana-EliasBenitez" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="DAW1-TresEnLinia-ErikSaldana-EliasBenitez" />
+ SoyManolo
+      <module name="DAW1TresEnLinia-ErikSaldana-EliasBenitez" />
       <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+ SoyManolo
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.JuegoTest.jugar" />
+        <item itemvalue="JUnit.JuegoTest" />
+        <item itemvalue="JUnit.JuegoTest.novaPartida" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
