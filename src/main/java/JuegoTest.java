@@ -7,19 +7,22 @@ class JuegoTest {
     @org.junit.jupiter.api.Test
     void novaPartida() {
         Juego j = new Juego();
-        String [] [] matriu = j.novaPartida();
-        assertEquals(3, matriu.length );
+        j.novaPartida();
+        assertEquals(3, j.getTaulell().length );
     }
 
     @org.junit.jupiter.api.Test
     void jugar() {
-        String [][] taulell = new String[3][3];
         Juego j = new Juego();
-        String [] [] valor = j.jugar(taulell);
-        assertEquals("X", valor [1] [2]);
+        j.novaPartida();
+        j.jugar(1,2);
+        assertEquals('X', j.getCasillaTaulell(1,2));
     }
 
     @org.junit.jupiter.api.Test
     void jugadaGuanyadora() {
+        Juego j = new Juego();
+        j.novaPartida();
+        assertEquals(false, j.jugadaGuanyadora(1,2));
     }
 }

@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Main {
     public void novaPartida() {
 
@@ -17,6 +19,5 @@ public class Main {
 
 
     public static void main(String[] args) {
-
     }
 }
