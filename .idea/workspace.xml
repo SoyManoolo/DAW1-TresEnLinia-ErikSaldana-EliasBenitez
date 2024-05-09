@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46a8e01c-0c02-41fd-a804-ce2de6764fe3" name="Changes" comment="He escrito el codigo de los metodos novaPartida() y jugar() y sus respectivas pruebas unitarias.">
+SoyManolo
+    <list default="true" id="46a8e01c-0c02-41fd-a804-ce2de6764fe3" name="Changes" comment="He añadido los metodos de la clase Main">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Juego.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Juego.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/JuegoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JuegoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +26,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Negriu" />
+        <entry key="$PROJECT_DIR$" value="SoyManolo" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -60,19 +60,19 @@
     "Application.Main.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
     "JUnit.JuegoTest.executor": "Run",
-    "JUnit.JuegoTest.jugadaGuanyadora.executor": "Run",
     "JUnit.JuegoTest.jugar.executor": "Run",
     "JUnit.JuegoTest.novaPartida.executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "create.test.in.the.same.root": "true",
-    "git-widget-placeholder": "SoyManolo",
+    "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/manolo/Documentos/M03+M05/NF01/DAW1TresEnLinia-ErikSaldana-EliasBenitez",
+    "last_opened_file_path": "/home/manolo/Documentos/M03+M05/NF01/DAW1-TresEnLinia-ErikSaldana-EliasBenitez",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0"
@@ -86,22 +86,13 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.JuegoTest.jugadaGuanyadora">
+ SoyManolo
+  <component name="RunManager" selected="JUnit.JuegoTest.jugar">
     <configuration name="JuegoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DAW1TresEnLinia-ErikSaldana-EliasBenitez" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="JuegoTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JuegoTest.jugadaGuanyadora" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="DAW1TresEnLinia-ErikSaldana-EliasBenitez" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="JuegoTest" />
-      <option name="METHOD_NAME" value="jugadaGuanyadora" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -126,12 +117,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="DAW1TresEnLinia-ErikSaldana-EliasBenitez" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+ SoyManolo
+      <module name="DAW1TresEnLinia-ErikSaldana-EliasBenitez" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+ SoyManolo
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.JuegoTest.jugadaGuanyadora" />
         <item itemvalue="JUnit.JuegoTest.jugar" />
-        <item itemvalue="JUnit.JuegoTest.novaPartida" />
         <item itemvalue="JUnit.JuegoTest" />
+        <item itemvalue="JUnit.JuegoTest.novaPartida" />
       </list>
     </recent_temporary>
   </component>
@@ -168,15 +173,31 @@
       <option name="project" value="LOCAL" />
       <updated>1714989600846</updated>
     </task>
-    <task id="LOCAL-00004" summary="He escrito el codigo de los metodos novaPartida() y jugar() y sus respectivas pruebas unitarias.">
+    <task id="LOCAL-00004" summary="Prueba de commit">
       <option name="closed" value="true" />
-      <created>1715044136706</created>
+      <created>1715017130799</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1715044136706</updated>
+      <updated>1715017130799</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Borro el maven por un fallo">
+      <option name="closed" value="true" />
+      <created>1715018238121</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1715018238121</updated>
+    </task>
+    <task id="LOCAL-00006" summary=".">
+      <option name="closed" value="true" />
+      <created>1715018259288</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1715018259288</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -206,7 +227,9 @@
     <MESSAGE value="respuesta de las opciones del menú" />
     <MESSAGE value="He metido el sc.nextInt directamente como parametro en el switch" />
     <MESSAGE value="He añadido los metodos de la clase Main" />
-    <MESSAGE value="He escrito el codigo de los metodos novaPartida() y jugar() y sus respectivas pruebas unitarias." />
-    <option name="LAST_COMMIT_MESSAGE" value="He escrito el codigo de los metodos novaPartida() y jugar() y sus respectivas pruebas unitarias." />
+    <MESSAGE value="Prueba de commit" />
+    <MESSAGE value="Borro el maven por un fallo" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
 </project>
