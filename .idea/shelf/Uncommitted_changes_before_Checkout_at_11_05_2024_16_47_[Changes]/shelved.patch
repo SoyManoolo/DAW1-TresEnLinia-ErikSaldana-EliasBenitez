@@ -1,0 +1,28 @@
+Index: src/main/java/JuegoTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import org.junit.jupiter.params.ParameterizedTest;\r\nimport org.junit.jupiter.params.provider.CsvSource;\r\n\r\nimport static org.junit.jupiter.api.Assertions.*;\r\n\r\nclass JuegoTest {\r\n\r\n    @org.junit.jupiter.api.Test\r\n    void novaPartida() {\r\n        Juego j = new Juego();\r\n        j.novaPartida();\r\n        assertEquals(3, j.getTaulell().length );\r\n    }\r\n\r\n    @ParameterizedTest\r\n    @CsvSource({\"0,0\" , \"0,1\"})\r\n    void jugar(int n1, int n2) {\r\n        Juego j = new Juego();\r\n        j.novaPartida();\r\n\r\n        assertEquals('_',j.getCasillaTaulell(n1,n2)); // comprobar que la casilla esta vacia\r\n        j.jugar(n1,n2);\r\n        assertEquals('X',j.getCasillaTaulell(n1,n2));\r\n    }\r\n\r\n\r\n    @org.junit.jupiter.api.Test\r\n    void jugadaGuanyadora() {\r\n        Juego j = new Juego();\r\n        j.novaPartida();\r\n        assertEquals(false, j.jugadaGuanyadora(1,2));\r\n    }\r\n}
+===================================================================
+diff --git a/src/main/java/JuegoTest.java b/src/main/java/JuegoTest.java
+--- a/src/main/java/JuegoTest.java	
++++ b/src/main/java/JuegoTest.java	
+@@ -13,14 +13,13 @@
+     }
+ 
+     @ParameterizedTest
+-    @CsvSource({"0,0" , "0,1"})
+-    void jugar(int n1, int n2) {
++    @CsvSource({"0,0" , "0,1" , "0,2" , "1,0" , "1,1" , "1,2" , "2,0" , "2,1" , "2,2"})
++    void jugar(int fila, int columna) {
+         Juego j = new Juego();
+         j.novaPartida();
+-
+-        assertEquals('_',j.getCasillaTaulell(n1,n2)); // comprobar que la casilla esta vacia
+-        j.jugar(n1,n2);
+-        assertEquals('X',j.getCasillaTaulell(n1,n2));
++        assertEquals('_',j.getCasillaTaulell(fila,columna)); // comprobar que la casilla esta vacia
++        j.jugar(fila,columna);
++        assertEquals('X',j.getCasillaTaulell(fila,columna)); // comprobar que la casilla esta ocupada
+     }
+ 
+ 

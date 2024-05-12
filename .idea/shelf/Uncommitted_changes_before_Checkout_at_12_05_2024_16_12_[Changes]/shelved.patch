@@ -1,0 +1,122 @@
+Index: src/main/java/JuegoTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import org.junit.jupiter.params.ParameterizedTest;\r\nimport org.junit.jupiter.params.provider.CsvSource;\r\n\r\nimport static org.junit.jupiter.api.Assertions.*;\r\n\r\nclass JuegoTest {\r\n\r\n    @org.junit.jupiter.api.Test\r\n    void novaPartida() { //metodo que comprueba que se crea un tablero de 3x3\r\n        Juego j = new Juego();\r\n        j.novaPartida();\r\n        assertEquals(3, j.getTaulell().length );\r\n    }\r\n\r\n    @ParameterizedTest\r\n    @CsvSource({\"0,0,0,1\", \"1,1,1,2\", \"0,2,2,2\", \"2,1,2,0\", \"1,0,0,0\"})\r\n    void jugar(int fila1, int columna1, int fila2, int columna2) { //metodo que comprueba que se puede jugar en todas las casillas\r\n        Juego j = new Juego();\r\n        j.novaPartida();\r\n\r\n        assertEquals('_',j.getCasillaTaulell(fila1, columna1)); // comprobar que la casilla esta vacia\r\n        j.jugar(fila1, columna1);\r\n        assertEquals('X',j.getCasillaTaulell(fila1, columna1)); // comprobar que la casilla esta ocupada;\r\n\r\n        assertEquals('_',j.getCasillaTaulell(fila2, columna2)); // comprobar que la casilla esta vacia\r\n        j.jugar(fila2, columna2);\r\n        assertEquals('O',j.getCasillaTaulell(fila2, columna2)); // comprobar que la casilla esta ocupada;\r\n        assertThrows(IllegalArgumentException.class, () -> j.jugar(fila2, columna2)); // comprobar que la casilla no se puede ocupar dos veces\r\n    }\r\n\r\n\r\n    @org.junit.jupiter.api.Test\r\n    void jugadaGuanyadora() { //metodo que comprueba que no hay jugada ganadora\r\n        Juego j = new Juego();\r\n        j.novaPartida();\r\n        assertEquals(false, j.jugadaGuanyadora(1,2));\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/JuegoTest.java b/src/main/java/JuegoTest.java
+--- a/src/main/java/JuegoTest.java	(revision 5449d97522dbfa5c3172608aaa6cf6b406c9e814)
++++ b/src/main/java/JuegoTest.java	(date 1715523142617)
+@@ -34,5 +34,6 @@
+         Juego j = new Juego();
+         j.novaPartida();
+         assertEquals(false, j.jugadaGuanyadora(1,2));
++
+     }
+ }
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"46a8e01c-0c02-41fd-a804-ce2de6764fe3\" name=\"Changes\" comment=\"\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/Juego.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/Juego.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/JuegoTest.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/JuegoTest.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/Main.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/Main.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/TUI.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/TUI.java\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n        <option value=\"JUnit5 Test Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"master\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;SoyManoolo&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\"><![CDATA[{\r\n  \"selectedUrlAndAccountId\": {\r\n    \"url\": \"https://github.com/SoyManoolo/DAW1-TresEnLinia-ErikSaldana-EliasBenitez.git\",\r\n    \"accountId\": \"ce236500-9cfe-47c6-8ff3-3398e4934491\"\r\n  }\r\n}]]></component>\r\n  <component name=\"ProjectCodeStyleSettingsMigration\">\r\n    <option name=\"version\" value=\"2\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 5\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2fEanckLpAJQ0XYKnYtWrfO240R\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"Application.Main.executor\": \"Run\",\r\n    \"Downloaded.Files.Path.Enabled\": \"false\",\r\n    \"JUnit.JuegoTest.executor\": \"Run\",\r\n    \"JUnit.JuegoTest.jugar (1).executor\": \"Run\",\r\n    \"JUnit.JuegoTest.jugar (2).executor\": \"Debug\",\r\n    \"JUnit.JuegoTest.jugar.executor\": \"Run\",\r\n    \"JUnit.JuegoTest.jugar1.executor\": \"Run\",\r\n    \"JUnit.JuegoTest.jugar2.executor\": \"Run\",\r\n    \"JUnit.JuegoTest.novaPartida.executor\": \"Run\",\r\n    \"Repository.Attach.Annotations\": \"false\",\r\n    \"Repository.Attach.JavaDocs\": \"false\",\r\n    \"Repository.Attach.Sources\": \"false\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"SHARE_PROJECT_CONFIGURATION_FILES\": \"true\",\r\n    \"com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary\": \"JUnit5\",\r\n    \"com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5\": \"\",\r\n    \"create.test.in.the.same.root\": \"true\",\r\n    \"git-widget-placeholder\": \"SoyManolo\",\r\n    \"kotlin-language-version-configured\": \"true\",\r\n    \"last_opened_file_path\": \"/home/manolo/Documentos/M03+M05/NF01/DAW1-TresEnLinia-ErikSaldana-EliasBenitez\",\r\n    \"project.structure.last.edited\": \"Project\",\r\n    \"project.structure.proportion\": \"0.0\",\r\n    \"project.structure.side.proportion\": \"0.0\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CreateTestDialog.Recents.Supers\">\r\n      <recent name=\"\" />\r\n    </key>\r\n    <key name=\"CreateTestDialog.RecentsKey\">\r\n      <recent name=\"\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"JUnit.JuegoTest.jugar\">\r\n    <configuration name=\"JuegoTest\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"DAW1TresEnLinia-ErikSaldana-EliasBenitez\" />\r\n      <option name=\"PACKAGE_NAME\" value=\"\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"JuegoTest\" />\r\n      <option name=\"TEST_OBJECT\" value=\"class\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"JuegoTest.jugar (1)\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"DAW1TresEnLinia-ErikSaldana-EliasBenitez\" />\r\n      <option name=\"PACKAGE_NAME\" value=\"\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"JuegoTest\" />\r\n      <option name=\"METHOD_NAME\" value=\"jugar(int,int)\" />\r\n      <option name=\"TEST_OBJECT\" value=\"method\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"JuegoTest.jugar\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"DAW1TresEnLinia-ErikSaldana-EliasBenitez\" />\r\n      <option name=\"PACKAGE_NAME\" value=\"\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"JuegoTest\" />\r\n      <option name=\"METHOD_NAME\" value=\"jugar(int,int,int,int)\" />\r\n      <option name=\"TEST_OBJECT\" value=\"method\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"JuegoTest.jugar1\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"DAW1TresEnLinia-ErikSaldana-EliasBenitez\" />\r\n      <option name=\"PACKAGE_NAME\" value=\"\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"JuegoTest\" />\r\n      <option name=\"METHOD_NAME\" value=\"jugar1(int,int)\" />\r\n      <option name=\"TEST_OBJECT\" value=\"method\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"JuegoTest.jugar\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"DAW1TresEnLinia-ErikSaldana-EliasBenitez\" />\r\n      <option name=\"PACKAGE_NAME\" value=\"\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"JuegoTest\" />\r\n      <option name=\"METHOD_NAME\" value=\"jugar\" />\r\n      <option name=\"TEST_OBJECT\" value=\"method\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"JuegoTest.jugar2\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"DAW1TresEnLinia-ErikSaldana-EliasBenitez\" />\r\n      <option name=\"PACKAGE_NAME\" value=\"\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"JuegoTest\" />\r\n      <option name=\"METHOD_NAME\" value=\"jugar2(int,int,int,int)\" />\r\n      <option name=\"TEST_OBJECT\" value=\"method\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"JuegoTest.novaPartida\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"DAW1TresEnLinia-ErikSaldana-EliasBenitez\" />\r\n      <option name=\"PACKAGE_NAME\" value=\"\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"JuegoTest\" />\r\n      <option name=\"METHOD_NAME\" value=\"novaPartida\" />\r\n      <option name=\"TEST_OBJECT\" value=\"method\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"JUnit.JuegoTest.jugar\" />\r\n        <item itemvalue=\"JUnit.JuegoTest.jugar2\" />\r\n        <item itemvalue=\"JUnit.JuegoTest.jugar1\" />\r\n        <item itemvalue=\"JUnit.JuegoTest.jugar1\" />\r\n        <item itemvalue=\"JUnit.JuegoTest.novaPartida\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"46a8e01c-0c02-41fd-a804-ce2de6764fe3\" name=\"Changes\" comment=\"\" />\r\n      <created>1713368860565</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1713368860565</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"respuesta de las opciones del menú\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1713567402428</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1713567402428</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"He metido el sc.nextInt directamente como parametro en el switch\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1713567608054</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1713567608054</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"He añadido los metodos de la clase Main\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1714989600846</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1714989600846</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Prueba de commit\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1715017130799</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1715017130799</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"Borro el maven por un fallo\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1715018238121</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1715018238121</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\".\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1715018259288</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1715018259288</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"He añadido que se revise la jugada ganadora tambien para el jugador 2, esto dependerá de quien sea el turno.\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1715277753742</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1715277753742</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"Actualizar vcs.xml y workspace.xml\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1715439035253</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1715439035253</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"9\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State>\r\n              <option name=\"FILTERS\">\r\n                <map>\r\n                  <entry key=\"branch\">\r\n                    <value>\r\n                      <list>\r\n                        <option value=\"SoyManolo\" />\r\n                      </list>\r\n                    </value>\r\n                  </entry>\r\n                </map>\r\n              </option>\r\n            </State>\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"respuesta de las opciones del menú\" />\r\n    <MESSAGE value=\"He metido el sc.nextInt directamente como parametro en el switch\" />\r\n    <MESSAGE value=\"He añadido los metodos de la clase Main\" />\r\n    <MESSAGE value=\"Prueba de commit\" />\r\n    <MESSAGE value=\"Borro el maven por un fallo\" />\r\n    <MESSAGE value=\".\" />\r\n    <MESSAGE value=\"He añadido que se revise la jugada ganadora tambien para el jugador 2, esto dependerá de quien sea el turno.\" />\r\n    <MESSAGE value=\"Actualizar vcs.xml y workspace.xml\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Actualizar vcs.xml y workspace.xml\" />\r\n  </component>\r\n  <component name=\"com.intellij.coverage.CoverageDataManagerImpl\">\r\n    <SUITE FILE_PATH=\"coverage/DAW1_TresEnLinia_ErikSaldana_EliasBenitez$JuegoTest_jugar.ic\" NAME=\"JuegoTest.jugar Coverage Results\" MODIFIED=\"1715279945341\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"idea\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"true\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 5449d97522dbfa5c3172608aaa6cf6b406c9e814)
++++ b/.idea/workspace.xml	(date 1715521343773)
+@@ -4,12 +4,8 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="46a8e01c-0c02-41fd-a804-ce2de6764fe3" name="Changes" comment="">
++    <list default="true" id="46a8e01c-0c02-41fd-a804-ce2de6764fe3" name="Changes" comment="He ampliado la prueba unitaria del metodo jugar para que compruebe que el jugador 2 puede jugar y que no se puede poner repetir una jugada">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/Juego.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Juego.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/JuegoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JuegoTest.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/TUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TUI.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -38,12 +34,12 @@
+     &quot;assignee&quot;: &quot;SoyManoolo&quot;
+   }
+ }</component>
+-  <component name="GithubPullRequestsUISettings"><![CDATA[{
+-  "selectedUrlAndAccountId": {
+-    "url": "https://github.com/SoyManoolo/DAW1-TresEnLinia-ErikSaldana-EliasBenitez.git",
+-    "accountId": "ce236500-9cfe-47c6-8ff3-3398e4934491"
++  <component name="GithubPullRequestsUISettings">{
++  &quot;selectedUrlAndAccountId&quot;: {
++    &quot;url&quot;: &quot;https://github.com/SoyManoolo/DAW1-TresEnLinia-ErikSaldana-EliasBenitez.git&quot;,
++    &quot;accountId&quot;: &quot;ce236500-9cfe-47c6-8ff3-3398e4934491&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="ProjectCodeStyleSettingsMigration">
+     <option name="version" value="2" />
+   </component>
+@@ -75,7 +71,7 @@
+     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+     "create.test.in.the.same.root": "true",
+-    "git-widget-placeholder": "SoyManolo",
++    "git-widget-placeholder": "#4 on SoyManolo",
+     "kotlin-language-version-configured": "true",
+     "last_opened_file_path": "/home/manolo/Documentos/M03+M05/NF01/DAW1-TresEnLinia-ErikSaldana-EliasBenitez",
+     "project.structure.last.edited": "Project",
+@@ -131,21 +127,21 @@
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="JuegoTest.jugar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
++    <configuration name="JuegoTest.jugar2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+       <module name="DAW1TresEnLinia-ErikSaldana-EliasBenitez" />
+       <option name="PACKAGE_NAME" value="" />
+       <option name="MAIN_CLASS_NAME" value="JuegoTest" />
+-      <option name="METHOD_NAME" value="jugar" />
++      <option name="METHOD_NAME" value="jugar2(int,int,int,int)" />
+       <option name="TEST_OBJECT" value="method" />
+       <method v="2">
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="JuegoTest.jugar2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
++    <configuration name="JuegoTest.jugar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+       <module name="DAW1TresEnLinia-ErikSaldana-EliasBenitez" />
+       <option name="PACKAGE_NAME" value="" />
+       <option name="MAIN_CLASS_NAME" value="JuegoTest" />
+-      <option name="METHOD_NAME" value="jugar2(int,int,int,int)" />
++      <option name="METHOD_NAME" value="jugar" />
+       <option name="TEST_OBJECT" value="method" />
+       <method v="2">
+         <option name="Make" enabled="true" />
+@@ -244,7 +240,15 @@
+       <option name="project" value="LOCAL" />
+       <updated>1715439035253</updated>
+     </task>
+-    <option name="localTasksCounter" value="9" />
++    <task id="LOCAL-00009" summary="He ampliado la prueba unitaria del metodo jugar para que compruebe que el jugador 2 puede jugar y que no se puede poner repetir una jugada">
++      <option name="closed" value="true" />
++      <created>1715478397996</created>
++      <option name="number" value="00009" />
++      <option name="presentableId" value="LOCAL-00009" />
++      <option name="project" value="LOCAL" />
++      <updated>1715478397996</updated>
++    </task>
++    <option name="localTasksCounter" value="10" />
+     <servers />
+   </component>
+   <component name="Vcs.Log.Tabs.Properties">
+@@ -279,7 +283,8 @@
+     <MESSAGE value="." />
+     <MESSAGE value="He añadido que se revise la jugada ganadora tambien para el jugador 2, esto dependerá de quien sea el turno." />
+     <MESSAGE value="Actualizar vcs.xml y workspace.xml" />
+-    <option name="LAST_COMMIT_MESSAGE" value="Actualizar vcs.xml y workspace.xml" />
++    <MESSAGE value="He ampliado la prueba unitaria del metodo jugar para que compruebe que el jugador 2 puede jugar y que no se puede poner repetir una jugada" />
++    <option name="LAST_COMMIT_MESSAGE" value="He ampliado la prueba unitaria del metodo jugar para que compruebe que el jugador 2 puede jugar y que no se puede poner repetir una jugada" />
+   </component>
+   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+     <SUITE FILE_PATH="coverage/DAW1_TresEnLinia_ErikSaldana_EliasBenitez$JuegoTest_jugar.ic" NAME="JuegoTest.jugar Coverage Results" MODIFIED="1715279945341" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
