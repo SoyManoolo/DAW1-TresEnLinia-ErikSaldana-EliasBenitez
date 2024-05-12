@@ -13,6 +13,14 @@ public class Juego {
         return torn;
     }
 
+    public void turnoJugador1() {
+        torn = 1;
+    }
+
+    public void turnoJugador2() {
+        torn = 2;
+    }
+
     public void novaPartida() {
         /*
         taulell = new String [n][n];
@@ -85,22 +93,6 @@ public class Juego {
         taulell[2][2] = '\u0000';
 
         return jugada;
-
-        /* Codigo para tablero de 3 a 10
-        for (int i = 0; i < taulell.length; i++) {
-            if (taulell[2][i] == "X") jugada = true;
-            else jugada = false;
-        }
-        if(jugada == true) return jugada;
-        else 
-
-        //vertical arriba
-        for (int i = 0; i < taulell.length; i--) {
-            if (taulell[2][i] == "X") jugada = true;
-        }
-
-        return jugada;
-         */
     }
 
 }

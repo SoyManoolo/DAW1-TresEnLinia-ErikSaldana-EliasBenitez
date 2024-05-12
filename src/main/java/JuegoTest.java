@@ -33,6 +33,32 @@ class JuegoTest {
     void jugadaGuanyadora() { //metodo que comprueba que no hay jugada ganadora
         Juego j = new Juego();
         j.novaPartida();
+        j.jugadaGuanyadora(1,2);
         assertEquals(false, j.jugadaGuanyadora(1,2));
+
+        j.jugar(1,1); //jugada jugador 1
+        j.jugadaGuanyadora(1,2); //comprueba si hay jugada ganadora
+        assertEquals(false, j.jugadaGuanyadora(1,2));
+
+        j.turnoJugador1();
+        j.jugar(1,0);
+        j.turnoJugador1();
+        j.jugadaGuanyadora(1,2);
+        assertEquals(true, j.jugadaGuanyadora(1,2));
+
+        j.novaPartida(); // crea un nuevo tablero para comprobar las jugadas del jugador 2
+        j.turnoJugador2();
+        j.jugadaGuanyadora(1,2);
+        assertEquals(false, j.jugadaGuanyadora(1,2));
+
+        j.jugar(1,1); //jugada jugador 2
+        j.jugadaGuanyadora(1,2); //comprueba si hay jugada ganadora del jugador 2
+        assertEquals(false, j.jugadaGuanyadora(1,2));
+
+        j.turnoJugador2();
+        j.jugar(1,0);
+        j.turnoJugador2();
+        j.jugadaGuanyadora(1,2);
+        assertEquals(true, j.jugadaGuanyadora(1,2));
     }
 }

@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
- SoyManolo
     <list default="true" id="46a8e01c-0c02-41fd-a804-ce2de6764fe3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Juego.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Juego.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/JuegoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JuegoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TUI.java" afterDir="false" />
-
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,12 +36,12 @@
     &quot;assignee&quot;: &quot;SoyManoolo&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/SoyManoolo/DAW1-TresEnLinia-ErikSaldana-EliasBenitez.git",
-    "accountId": "ce236500-9cfe-47c6-8ff3-3398e4934491"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/SoyManoolo/DAW1-TresEnLinia-ErikSaldana-EliasBenitez.git&quot;,
+    &quot;accountId&quot;: &quot;ce236500-9cfe-47c6-8ff3-3398e4934491&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
@@ -63,13 +59,12 @@
     "Application.Main.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
     "JUnit.JuegoTest.executor": "Run",
+    "JUnit.JuegoTest.jugadaGuanyadora.executor": "Run",
     "JUnit.JuegoTest.jugar (1).executor": "Run",
-SoyManolo
     "JUnit.JuegoTest.jugar (2).executor": "Debug",
     "JUnit.JuegoTest.jugar.executor": "Run",
     "JUnit.JuegoTest.jugar1.executor": "Run",
     "JUnit.JuegoTest.jugar2.executor": "Run",
-
     "JUnit.JuegoTest.novaPartida.executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
@@ -79,9 +74,7 @@ SoyManolo
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "create.test.in.the.same.root": "true",
-SoyManolo
-    "git-widget-placeholder": "SoyManolo",
-
+    "git-widget-placeholder": "#4 on SoyManolo",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/home/manolo/Documentos/M03+M05/NF01/DAW1-TresEnLinia-ErikSaldana-EliasBenitez",
     "project.structure.last.edited": "Project",
@@ -97,23 +90,12 @@ SoyManolo
       <recent name="" />
     </key>
   </component>
-SoyManolo
-  <component name="RunManager" selected="JUnit.JuegoTest.jugar">
-
-    <configuration name="JuegoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.JuegoTest.jugadaGuanyadora">
+    <configuration name="JuegoTest.jugadaGuanyadora" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DAW1TresEnLinia-ErikSaldana-EliasBenitez" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="JuegoTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JuegoTest.jugar (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="DAW1TresEnLinia-ErikSaldana-EliasBenitez" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="JuegoTest" />
-      <option name="METHOD_NAME" value="jugar(int,int)" />
+      <option name="METHOD_NAME" value="jugadaGuanyadora" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -139,21 +121,21 @@ SoyManolo
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JuegoTest.jugar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="DAW1TresEnLinia-ErikSaldana-EliasBenitez" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="JuegoTest" />
-      <option name="METHOD_NAME" value="jugar" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="JuegoTest.jugar2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DAW1TresEnLinia-ErikSaldana-EliasBenitez" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="JuegoTest" />
       <option name="METHOD_NAME" value="jugar2(int,int,int,int)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JuegoTest.jugar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DAW1TresEnLinia-ErikSaldana-EliasBenitez" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="JuegoTest" />
+      <option name="METHOD_NAME" value="jugar" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -169,26 +151,13 @@ SoyManolo
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="DAW1TresEnLinia-ErikSaldana-EliasBenitez" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="DAW1TresEnLinia-ErikSaldana-EliasBenitez" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.JuegoTest.jugadaGuanyadora" />
         <item itemvalue="JUnit.JuegoTest.jugar" />
         <item itemvalue="JUnit.JuegoTest.jugar2" />
         <item itemvalue="JUnit.JuegoTest.jugar1" />
         <item itemvalue="JUnit.JuegoTest.jugar1" />
-        <item itemvalue="JUnit.JuegoTest.novaPartida" />
       </list>
     </recent_temporary>
   </component>
@@ -299,10 +268,8 @@ SoyManolo
     <MESSAGE value="Borro el maven por un fallo" />
     <MESSAGE value="." />
     <MESSAGE value="He añadido que se revise la jugada ganadora tambien para el jugador 2, esto dependerá de quien sea el turno." />
- SoyManolo
     <MESSAGE value="Actualizar vcs.xml y workspace.xml" />
     <option name="LAST_COMMIT_MESSAGE" value="Actualizar vcs.xml y workspace.xml" />
-
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/DAW1_TresEnLinia_ErikSaldana_EliasBenitez$JuegoTest_jugar.ic" NAME="JuegoTest.jugar Coverage Results" MODIFIED="1715279945341" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
