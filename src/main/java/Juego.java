@@ -27,13 +27,11 @@ public class Juego {
     }
 
     public void jugar(int fila, int columna) {
-        if (torn == 1) {
-            taulell [fila] [columna] = 'X';
-            ++torn;
-        } else if (torn == 2) {
-            taulell [fila] [columna] = 'O';
-            --torn;
+        if (taulell[fila][columna] != '_') {
+            throw new IllegalArgumentException("Casilla ocupada");
         }
+        taulell[fila][columna] = torn == 1 ? 'X' : 'O';
+        torn = 3 - torn; // Cambia el turno del jugador
     }
 
     public boolean jugadaGuanyadora(int fila, int columna) {
