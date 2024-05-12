@@ -30,35 +30,37 @@ class JuegoTest {
 
 
     @org.junit.jupiter.api.Test
-    void jugadaGuanyadora() { //metodo que comprueba que no hay jugada ganadora
+    void jugadaGuanyadora() { //metodo que comprueba si hay jugada ganadora
         Juego j = new Juego();
         j.novaPartida();
-        j.jugadaGuanyadora(1,2);
+        j.jugadaGuanyadora(1,2); //comprueba si hay jugada ganadora del jugador 1
         assertEquals(false, j.jugadaGuanyadora(1,2));
 
         j.jugar(1,1); //jugada jugador 1
         j.jugadaGuanyadora(1,2); //comprueba si hay jugada ganadora
         assertEquals(false, j.jugadaGuanyadora(1,2));
 
-        j.turnoJugador1();
-        j.jugar(1,0);
-        j.turnoJugador1();
+        j.turnoJugador1(); //le damos el turno al jugador 1
+        j.jugar(1,0); //jugada jugador 1
+        j.turnoJugador1(); //le damos el turno al jugador 1
         j.jugadaGuanyadora(1,2);
         assertEquals(true, j.jugadaGuanyadora(1,2));
 
+        //iniciamos otra prueba para el jugador 2
+
         j.novaPartida(); // crea un nuevo tablero para comprobar las jugadas del jugador 2
-        j.turnoJugador2();
-        j.jugadaGuanyadora(1,2);
+        j.turnoJugador2(); //le damos el turno al jugador 2
+        j.jugadaGuanyadora(1,2); //comprueba si hay jugada ganadora del jugador 2
         assertEquals(false, j.jugadaGuanyadora(1,2));
 
         j.jugar(1,1); //jugada jugador 2
         j.jugadaGuanyadora(1,2); //comprueba si hay jugada ganadora del jugador 2
         assertEquals(false, j.jugadaGuanyadora(1,2));
 
-        j.turnoJugador2();
-        j.jugar(1,0);
-        j.turnoJugador2();
-        j.jugadaGuanyadora(1,2);
+        j.turnoJugador2(); //le volvemos a dar el turno al jugador 2
+        j.jugar(1,0); //jugada jugador 2
+        j.turnoJugador2(); //le volvemos a dar el turno al jugador 2
+        j.jugadaGuanyadora(1,2); //comprueba si hay jugada ganadora del jugador 2
         assertEquals(true, j.jugadaGuanyadora(1,2));
     }
 }

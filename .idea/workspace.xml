@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46a8e01c-0c02-41fd-a804-ce2de6764fe3" name="Changes" comment="">
+    <list default="true" id="46a8e01c-0c02-41fd-a804-ce2de6764fe3" name="Changes" comment="He ampliado las pruebas unitarias del metodo jugadaGuanyadora para que compruebe los multiples casos de posible victoria">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Juego.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Juego.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/JuegoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JuegoTest.java" afterDir="false" />
@@ -234,7 +234,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715439035253</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="He ampliado las pruebas unitarias del metodo jugadaGuanyadora para que compruebe los multiples casos de posible victoria">
+      <option name="closed" value="true" />
+      <created>1715524700583</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1715524700583</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -269,7 +277,8 @@
     <MESSAGE value="." />
     <MESSAGE value="He añadido que se revise la jugada ganadora tambien para el jugador 2, esto dependerá de quien sea el turno." />
     <MESSAGE value="Actualizar vcs.xml y workspace.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Actualizar vcs.xml y workspace.xml" />
+    <MESSAGE value="He ampliado las pruebas unitarias del metodo jugadaGuanyadora para que compruebe los multiples casos de posible victoria" />
+    <option name="LAST_COMMIT_MESSAGE" value="He ampliado las pruebas unitarias del metodo jugadaGuanyadora para que compruebe los multiples casos de posible victoria" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/DAW1_TresEnLinia_ErikSaldana_EliasBenitez$JuegoTest_jugar.ic" NAME="JuegoTest.jugar Coverage Results" MODIFIED="1715279945341" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
