@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+ SoyManolo
     <list default="true" id="46a8e01c-0c02-41fd-a804-ce2de6764fe3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Juego.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Juego.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/JuegoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JuegoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/TUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TUI.java" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +29,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="SoyManolo" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -62,10 +64,12 @@
     "Downloaded.Files.Path.Enabled": "false",
     "JUnit.JuegoTest.executor": "Run",
     "JUnit.JuegoTest.jugar (1).executor": "Run",
+SoyManolo
     "JUnit.JuegoTest.jugar (2).executor": "Debug",
     "JUnit.JuegoTest.jugar.executor": "Run",
     "JUnit.JuegoTest.jugar1.executor": "Run",
     "JUnit.JuegoTest.jugar2.executor": "Run",
+
     "JUnit.JuegoTest.novaPartida.executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
@@ -75,7 +79,9 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "create.test.in.the.same.root": "true",
+SoyManolo
     "git-widget-placeholder": "SoyManolo",
+
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/home/manolo/Documentos/M03+M05/NF01/DAW1-TresEnLinia-ErikSaldana-EliasBenitez",
     "project.structure.last.edited": "Project",
@@ -91,7 +97,9 @@
       <recent name="" />
     </key>
   </component>
+SoyManolo
   <component name="RunManager" selected="JUnit.JuegoTest.jugar">
+
     <configuration name="JuegoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DAW1TresEnLinia-ErikSaldana-EliasBenitez" />
       <option name="PACKAGE_NAME" value="" />
@@ -157,6 +165,19 @@
       <option name="MAIN_CLASS_NAME" value="JuegoTest" />
       <option name="METHOD_NAME" value="novaPartida" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="DAW1TresEnLinia-ErikSaldana-EliasBenitez" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="DAW1TresEnLinia-ErikSaldana-EliasBenitez" />
+      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -278,8 +299,10 @@
     <MESSAGE value="Borro el maven por un fallo" />
     <MESSAGE value="." />
     <MESSAGE value="He añadido que se revise la jugada ganadora tambien para el jugador 2, esto dependerá de quien sea el turno." />
+ SoyManolo
     <MESSAGE value="Actualizar vcs.xml y workspace.xml" />
     <option name="LAST_COMMIT_MESSAGE" value="Actualizar vcs.xml y workspace.xml" />
+
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/DAW1_TresEnLinia_ErikSaldana_EliasBenitez$JuegoTest_jugar.ic" NAME="JuegoTest.jugar Coverage Results" MODIFIED="1715279945341" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
