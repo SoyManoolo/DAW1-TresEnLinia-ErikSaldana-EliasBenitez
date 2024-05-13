@@ -29,7 +29,6 @@ public class TUI {
         }
     }
     public void mostrarTaulell() {
-
     }
 
     public void recollirJugada() {
