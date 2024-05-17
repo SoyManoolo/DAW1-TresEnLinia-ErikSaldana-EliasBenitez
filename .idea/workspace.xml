@@ -4,10 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46a8e01c-0c02-41fd-a804-ce2de6764fe3" name="Changes" comment="He ampliado las pruebas unitarias del metodo jugadaGuanyadora para que compruebe los multiples casos de posible victoria">
+    <list default="true" id="46a8e01c-0c02-41fd-a804-ce2de6764fe3" name="Changes" comment=".">
+      <change afterPath="$PROJECT_DIR$/config.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Juego.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Juego.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/JuegoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JuegoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Juego.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Juego.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/JuegoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/JuegoTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/TUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/TUI.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +46,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/SoyManoolo/DAW1-TresEnLinia-ErikSaldana-EliasBenitez.git&quot;,
-    &quot;accountId&quot;: &quot;ce236500-9cfe-47c6-8ff3-3398e4934491&quot;
+    &quot;accountId&quot;: &quot;058c3ac8-7684-45af-ab05-71d75b2467e1&quot;
   }
 }</component>
   <component name="ProjectCodeStyleSettingsMigration">
@@ -54,34 +61,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "Downloaded.Files.Path.Enabled": "false",
-    "JUnit.JuegoTest.executor": "Run",
-    "JUnit.JuegoTest.jugadaGuanyadora.executor": "Run",
-    "JUnit.JuegoTest.jugar (1).executor": "Run",
-    "JUnit.JuegoTest.jugar (2).executor": "Debug",
-    "JUnit.JuegoTest.jugar.executor": "Run",
-    "JUnit.JuegoTest.jugar1.executor": "Run",
-    "JUnit.JuegoTest.jugar2.executor": "Run",
-    "JUnit.JuegoTest.novaPartida.executor": "Run",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "create.test.in.the.same.root": "true",
-    "git-widget-placeholder": "#4 on SoyManolo",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/manolo/Documentos/M03+M05/NF01/DAW1-TresEnLinia-ErikSaldana-EliasBenitez",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;JUnit.JuegoTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JuegoTest.jugadaGuanyadora.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JuegoTest.jugar (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JuegoTest.jugar (2).executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.JuegoTest.jugar.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JuegoTest.jugar1.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JuegoTest.jugar2.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JuegoTest.novaPartida.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.DAW1TresEnLinia-ErikSaldana-EliasBenitez [test].executor&quot;: &quot;Run&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;#4 on SoyManolo&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/manolo/Documentos/M03+M05/NF01/DAW1-TresEnLinia-ErikSaldana-EliasBenitez&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -90,7 +99,16 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.JuegoTest.jugadaGuanyadora">
+  <component name="RunManager">
+    <configuration name="JuegoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DAW1TresEnLinia-ErikSaldana-EliasBenitez" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="JuegoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="JuegoTest.jugadaGuanyadora" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DAW1TresEnLinia-ErikSaldana-EliasBenitez" />
       <option name="PACKAGE_NAME" value="" />
@@ -141,22 +159,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JuegoTest.novaPartida" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="DAW1TresEnLinia-ErikSaldana-EliasBenitez" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="JuegoTest" />
-      <option name="METHOD_NAME" value="novaPartida" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.JuegoTest" />
         <item itemvalue="JUnit.JuegoTest.jugadaGuanyadora" />
         <item itemvalue="JUnit.JuegoTest.jugar" />
         <item itemvalue="JUnit.JuegoTest.jugar2" />
-        <item itemvalue="JUnit.JuegoTest.jugar1" />
         <item itemvalue="JUnit.JuegoTest.jugar1" />
       </list>
     </recent_temporary>

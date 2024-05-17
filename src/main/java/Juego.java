@@ -1,10 +1,18 @@
 public class Juego {
-    private char [] [] taulell;
+    private char [] [] taulell = new char [3][3];
     private int torn;
+
+    public void setTaulell(char[][] taulell) {
+        this.taulell = taulell;
+    }
 
     public char[][] getTaulell() {
         return taulell;
     }
+    public int getLenghtTaulell() {
+        return taulell.length;
+    }
+
     public char getCasillaTaulell(int fila, int columna) {
         return taulell[fila][columna];
     }
@@ -21,10 +29,10 @@ public class Juego {
         torn = 2;
     }
 
-    public void novaPartida() {
-        taulell = new char[3][3]; // Crea el tablero de 3x3
-        for (int i = 0; i < 3; i++){
-            for (int j = 0; j < 3; j++){
+    public void novaPartida(int mida) {
+        taulell = new char[mida][mida]; // Crea el tablero de x mida
+        for (int i = 0; i < taulell.length; i++){
+            for (int j = 0; j < taulell.length; j++){
                 taulell[i][j] = '_';
             }
         }
@@ -32,11 +40,10 @@ public class Juego {
     }
 
     public void jugar(int fila, int columna) {
-        if (taulell[fila][columna] != '_') {
-            throw new IllegalArgumentException("Casilla ocupada");
+        if (taulell [fila][columna] == '_') {
+            taulell[fila][columna] = torn == 1 ? 'X' : 'O';
+            torn = 3 - torn; // Cambia el turno del jugador
         }
-        taulell[fila][columna] = torn == 1 ? 'X' : 'O';
-        torn = 3 - torn; // Cambia el turno del jugador
     }
 
     public boolean jugadaGuanyadora(int fila, int columna) {
