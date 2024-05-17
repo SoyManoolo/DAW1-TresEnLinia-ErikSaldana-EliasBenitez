@@ -5,11 +5,12 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class JuegoTest {
 
-    @org.junit.jupiter.api.Test
-    void novaPartida() { //metodo que comprueba que se crea un tablero de 3x3
+    @ParameterizedTest
+    @CsvSource({"3", "4", "5", "6", "7", "8", "9", "10"})
+    void novaPartida(int mida) { //metodo que comprueba que se crea un tablero de 3x3
         Juego j = new Juego();
-        j.novaPartida(3);
-        assertEquals(3, j.getTaulell().length );
+        j.novaPartida(mida);
+        assertEquals(mida, j.getTaulell().length );
     }
 
     @ParameterizedTest
