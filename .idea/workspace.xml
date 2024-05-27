@@ -4,8 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46a8e01c-0c02-41fd-a804-ce2de6764fe3" name="Changes" comment="He ampliado la prueba unitaria jugar para que compruebe que se puede colocar una ficha en cualquier posición">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="46a8e01c-0c02-41fd-a804-ce2de6764fe3" name="Changes" comment="He convertido la prueba unitaria de novaPartida en una parametrizada para que pruebe las diferentes medidas permitidas">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_05_2024_16_47_[Changes]1/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_05_2024_16_47__Changes_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_12_05_2024_16_12_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_12_05_2024_16_12__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_11_05_2024_16_48_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_11_05_2024_16_48__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_05_2024_16_27_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_05_2024_16_27__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_05_2024_16_32_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_05_2024_16_32__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/JuegoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JuegoTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,30 +63,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "Downloaded.Files.Path.Enabled": "false",
-    "JUnit.JuegoTest.executor": "Run",
-    "JUnit.JuegoTest.jugar (1).executor": "Run",
-    "JUnit.JuegoTest.jugar.executor": "Debug",
-    "JUnit.JuegoTest.novaPartida.executor": "Run",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "create.test.in.the.same.root": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/manolo/Documentos/M03+M05/NF01/DAW1-TresEnLinia-ErikSaldana-EliasBenitez",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;JUnit.JuegoTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JuegoTest.jugadaGuanyadora.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JuegoTest.jugar (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JuegoTest.jugar (2).executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.JuegoTest.jugar.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JuegoTest.jugar1.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JuegoTest.jugar2.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JuegoTest.novaPartida.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.DAW1TresEnLinia-ErikSaldana-EliasBenitez [test].executor&quot;: &quot;Run&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;#4 on SoyManolo&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/manolo/Documentos/M03+M05/NF01/DAW1-TresEnLinia-ErikSaldana-EliasBenitez&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -84,7 +101,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.JuegoTest.novaPartida">
     <configuration name="JuegoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DAW1TresEnLinia-ErikSaldana-EliasBenitez" />
       <option name="PACKAGE_NAME" value="" />
@@ -94,11 +111,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JuegoTest.jugar (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="JuegoTest.jugadaGuanyadora" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DAW1TresEnLinia-ErikSaldana-EliasBenitez" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="JuegoTest" />
-      <option name="METHOD_NAME" value="jugar(int,int)" />
+      <option name="METHOD_NAME" value="jugadaGuanyadora" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JuegoTest.jugar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DAW1TresEnLinia-ErikSaldana-EliasBenitez" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="JuegoTest" />
+      <option name="METHOD_NAME" value="jugar(int,int,int,int)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JuegoTest.jugar2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DAW1TresEnLinia-ErikSaldana-EliasBenitez" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="JuegoTest" />
+      <option name="METHOD_NAME" value="jugar2(int,int,int,int)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -118,32 +155,19 @@
       <module name="DAW1TresEnLinia-ErikSaldana-EliasBenitez" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="JuegoTest" />
-      <option name="METHOD_NAME" value="novaPartida" />
+      <option name="METHOD_NAME" value="novaPartida(int)" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="DAW1TresEnLinia-ErikSaldana-EliasBenitez" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="DAW1TresEnLinia-ErikSaldana-EliasBenitez" />
-      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.JuegoTest" />
-        <item itemvalue="JUnit.JuegoTest.jugar (1)" />
-        <item itemvalue="JUnit.JuegoTest.jugar" />
         <item itemvalue="JUnit.JuegoTest.novaPartida" />
+        <item itemvalue="JUnit.JuegoTest" />
+        <item itemvalue="JUnit.JuegoTest.jugadaGuanyadora" />
         <item itemvalue="JUnit.JuegoTest.jugar" />
+        <item itemvalue="JUnit.JuegoTest.jugar2" />
       </list>
     </recent_temporary>
   </component>
@@ -212,7 +236,39 @@
       <option name="project" value="LOCAL" />
       <updated>1715277753742</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Actualizar vcs.xml y workspace.xml">
+      <option name="closed" value="true" />
+      <created>1715439035253</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1715439035253</updated>
+    </task>
+    <task id="LOCAL-00009" summary="He ampliado las pruebas unitarias del metodo jugadaGuanyadora para que compruebe los multiples casos de posible victoria">
+      <option name="closed" value="true" />
+      <created>1715524700583</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1715524700583</updated>
+    </task>
+    <task id="LOCAL-00010" summary="He añadido codigo en la clase mostrarConfiguracio que permite actualizar la medida del tablero (crea un archivo y lo edita) y un &quot;botón&quot; que permite volver atrás. También he añadido código en el método novaPartida del metodo Main para que pueda leer el archivo.">
+      <option name="closed" value="true" />
+      <created>1715971499601</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1715971499601</updated>
+    </task>
+    <task id="LOCAL-00011" summary="He convertido la prueba unitaria de novaPartida en una parametrizada para que pruebe las diferentes medidas permitidas">
+      <option name="closed" value="true" />
+      <created>1715971950659</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1715971950659</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -246,7 +302,11 @@
     <MESSAGE value="Borro el maven por un fallo" />
     <MESSAGE value="." />
     <MESSAGE value="He añadido que se revise la jugada ganadora tambien para el jugador 2, esto dependerá de quien sea el turno." />
-    <option name="LAST_COMMIT_MESSAGE" value="He añadido que se revise la jugada ganadora tambien para el jugador 2, esto dependerá de quien sea el turno." />
+    <MESSAGE value="Actualizar vcs.xml y workspace.xml" />
+    <MESSAGE value="He ampliado las pruebas unitarias del metodo jugadaGuanyadora para que compruebe los multiples casos de posible victoria" />
+    <MESSAGE value="He añadido codigo en la clase mostrarConfiguracio que permite actualizar la medida del tablero (crea un archivo y lo edita) y un &quot;botón&quot; que permite volver atrás. También he añadido código en el método novaPartida del metodo Main para que pueda leer el archivo." />
+    <MESSAGE value="He convertido la prueba unitaria de novaPartida en una parametrizada para que pruebe las diferentes medidas permitidas" />
+    <option name="LAST_COMMIT_MESSAGE" value="He convertido la prueba unitaria de novaPartida en una parametrizada para que pruebe las diferentes medidas permitidas" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/DAW1_TresEnLinia_ErikSaldana_EliasBenitez$JuegoTest_jugar.ic" NAME="JuegoTest.jugar Coverage Results" MODIFIED="1715279945341" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />

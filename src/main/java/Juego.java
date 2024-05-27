@@ -1,10 +1,18 @@
 public class Juego {
-    private char [] [] taulell;
+    private char [] [] taulell = new char [3][3];
     private int torn;
+
+    public void setTaulell(char[][] taulell) {
+        this.taulell = taulell;
+    }
 
     public char[][] getTaulell() {
         return taulell;
     }
+    public int getLenghtTaulell() {
+        return taulell.length;
+    }
+
     public char getCasillaTaulell(int fila, int columna) {
         return taulell[fila][columna];
     }
@@ -13,13 +21,18 @@ public class Juego {
         return torn;
     }
 
-    public void novaPartida() {
-        /*
-        taulell = new String [n][n];
-         */
-        taulell = new char[3][3]; // Crea el tablero de 3x3
-        for (int i = 0; i < 3; i++){
-            for (int j = 0; j < 3; j++){
+    public void turnoJugador1() {
+        torn = 1;
+    }
+
+    public void turnoJugador2() {
+        torn = 2;
+    }
+
+    public void novaPartida(int mida) {
+        taulell = new char[mida][mida]; // Crea el tablero de x mida
+        for (int i = 0; i < taulell.length; i++){
+            for (int j = 0; j < taulell.length; j++){
                 taulell[i][j] = '_';
             }
         }
@@ -27,12 +40,9 @@ public class Juego {
     }
 
     public void jugar(int fila, int columna) {
-        if (torn == 1) {
-            taulell [fila] [columna] = 'X';
-            ++torn;
-        } else if (torn == 2) {
-            taulell [fila] [columna] = 'O';
-            --torn;
+        if (taulell [fila][columna] == '_') {
+            taulell[fila][columna] = torn == 1 ? 'X' : 'O';
+            torn = 3 - torn; // Cambia el turno del jugador
         }
     }
 
@@ -87,22 +97,6 @@ public class Juego {
         taulell[2][2] = '\u0000';
 
         return jugada;
-
-        /* Codigo para tablero de 3 a 10
-        for (int i = 0; i < taulell.length; i++) {
-            if (taulell[2][i] == "X") jugada = true;
-            else jugada = false;
-        }
-        if(jugada == true) return jugada;
-        else 
-
-        //vertical arriba
-        for (int i = 0; i < taulell.length; i--) {
-            if (taulell[2][i] == "X") jugada = true;
-        }
-
-        return jugada;
-         */
     }
 
 }
