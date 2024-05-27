@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46a8e01c-0c02-41fd-a804-ce2de6764fe3" name="Changes" comment="He añadido codigo en la clase mostrarConfiguracio que permite actualizar la medida del tablero (crea un archivo y lo edita) y un &quot;botón&quot; que permite volver atrás. También he añadido código en el método novaPartida del metodo Main para que pueda leer el archivo.">
+    <list default="true" id="46a8e01c-0c02-41fd-a804-ce2de6764fe3" name="Changes" comment="He convertido la prueba unitaria de novaPartida en una parametrizada para que pruebe las diferentes medidas permitidas">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_05_2024_16_47_[Changes]1/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_05_2024_16_47__Changes_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_12_05_2024_16_12_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_12_05_2024_16_12__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_11_05_2024_16_48_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_11_05_2024_16_48__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_05_2024_16_27_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_05_2024_16_27__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_05_2024_16_32_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_05_2024_16_32__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/JuegoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JuegoTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -249,7 +260,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715971499601</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="He convertido la prueba unitaria de novaPartida en una parametrizada para que pruebe las diferentes medidas permitidas">
+      <option name="closed" value="true" />
+      <created>1715971950659</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1715971950659</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -286,7 +305,8 @@
     <MESSAGE value="Actualizar vcs.xml y workspace.xml" />
     <MESSAGE value="He ampliado las pruebas unitarias del metodo jugadaGuanyadora para que compruebe los multiples casos de posible victoria" />
     <MESSAGE value="He añadido codigo en la clase mostrarConfiguracio que permite actualizar la medida del tablero (crea un archivo y lo edita) y un &quot;botón&quot; que permite volver atrás. También he añadido código en el método novaPartida del metodo Main para que pueda leer el archivo." />
-    <option name="LAST_COMMIT_MESSAGE" value="He añadido codigo en la clase mostrarConfiguracio que permite actualizar la medida del tablero (crea un archivo y lo edita) y un &quot;botón&quot; que permite volver atrás. También he añadido código en el método novaPartida del metodo Main para que pueda leer el archivo." />
+    <MESSAGE value="He convertido la prueba unitaria de novaPartida en una parametrizada para que pruebe las diferentes medidas permitidas" />
+    <option name="LAST_COMMIT_MESSAGE" value="He convertido la prueba unitaria de novaPartida en una parametrizada para que pruebe las diferentes medidas permitidas" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/DAW1_TresEnLinia_ErikSaldana_EliasBenitez$JuegoTest_jugar.ic" NAME="JuegoTest.jugar Coverage Results" MODIFIED="1715279945341" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
