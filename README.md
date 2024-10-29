@@ -6,7 +6,7 @@
 <p>Sin terminar</p>
 
 <h2>Instalación</h2>
-<p>Para acceder al juego simplemente clona el repositorio y ejecutalo</p>
+<p>Para acceder al juego simplemente clona el repositorio y ejecutalo en un terminal</p>
 
 <h2>Tecnologias utilizadas</h2>
 <ul>
