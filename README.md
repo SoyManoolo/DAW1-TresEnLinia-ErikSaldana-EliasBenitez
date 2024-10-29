@@ -1,5 +1,6 @@
 <h1>Tres en raya</h1>
-<h3>Proyecto (sin terminar) del juego tres en raya en terminal</h3> 
+<h2>Descripción</h2>
+<p>Proyecto del juego tres en raya en terminal</p> 
 
 <h2>Estado del proyecto</h2>
 <p>Sin terminar</p>
